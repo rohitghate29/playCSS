@@ -1,0 +1,80 @@
+<style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box
+    }
+    .container{
+      height: 100vh;
+      width: 100vw;
+      background-color: #e5446d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .circle{
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      background-color: #f8f4e3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .inner-circle{
+      height: 210px;
+      width: 210px;
+      border-radius: 50%;
+      background-color: #e5446d;
+      position: absolute;
+    }
+    
+    .square{
+      height: 215px;
+      width: 215px;
+      transform: rotate(45deg);
+      position: relative;
+    }
+    .vertical{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+    }
+    .horizontal{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    #sq {
+        height: 45px;
+        width: 45px;
+        background-color: #e5446d;
+    }
+    </style>
+    <div>
+       <div class="container">
+          <div class="circle">
+                <div class="inner-circle"></div>
+                <div class="square">
+                    <div class="vertical">
+                        <div id="sq"></div>
+                        <div id="sq"></div>
+                    </div>
+                    <div class="horizontal">
+                        <div id="sq"></div>
+                        <div id="sq"></div>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+    

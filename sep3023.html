@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>30 Sep 2023(PlayCSS)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 100vh;
+            width: 100%;
+            background-color: #051923;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .endcol {
+            height: 150px;
+            width: 35px;
+            background-color: #006494;
+            margin: 0 -30px;
+        }
+        .secondcol {
+            height: 200px;
+            width: 50px;
+            background-color: #006494;
+            margin: 0 50px;
+        }
+        .mid-container{
+            position: absolute;
+        }
+        .mid {
+            height: 240px;
+            width: 60px;
+            background-color: #006494;
+            margin-top: 20px;
+        }
+        .circle{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            position: relative;
+            background-color: #051923;
+            top: 20px;
+            left: 10px;
+        }
+        #circle2{
+            top: 175px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="endcol"></div>
+        <div class="secondcol"></div>
+        <div class="secondcol"></div>
+        <div class="endcol"></div>
+        <div class="mid-container">
+            <div class="mid"><div class="circle"></div></div>
+            <div class="mid"><div class="circle" id="circle2"></div></div>
+        </div>
+    </div>
+</body>
+</html>
