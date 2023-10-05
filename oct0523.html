@@ -1,0 +1,58 @@
+<style>
+    body { background: #ddf093; }
+    .main {
+       height: 100vh;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+    }
+    .square {
+       height: 250px;
+       width: 250px;
+       background-color: #ce4760;
+       border-radius: 25px;
+       position: absolute;
+    }
+    .square:before {
+       content: "";
+       height: 250px;
+       width: 250px;
+       background-color: #ce4760;
+       border: 10px solid #ddf093;
+       border-radius: 25px;
+       position: absolute;
+       top: 15%;
+       left: 15%;
+    }
+    .circle {
+       height: 50px;
+       width: 50px;
+       background-color: #ddf093;
+       border-radius: 50%;
+    }
+    #c-1 {
+       position: absolute;
+       top: 30%;
+       left: 30%;
+    }
+    #c-2 {
+       position: absolute;
+       top: 60%;
+       left: 60%;
+    }
+    #c-3 {
+       position: absolute;
+       top: 90%;
+       left: 90%;
+    }
+    </style>
+    <div class="main">
+       <div class="square">
+          <div class="circle" id="c-1"></div>
+          <div class="circle" id="c-2"></div>
+          <div class="circle" id="c-3"></div>
+       </div>
+    </div>
+    
